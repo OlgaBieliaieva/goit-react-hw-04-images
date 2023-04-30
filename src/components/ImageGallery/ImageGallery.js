@@ -178,6 +178,7 @@ export default function ImageGallery({ query }) {
           payload: { error: error, status: Status.REJECTED },
         })
       );
+    // eslint-disable-next-line
   }, [page]);
 
   const handleChangePage = e => {

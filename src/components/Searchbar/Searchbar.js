@@ -2,9 +2,9 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { ImSearch } from 'react-icons/im';
 import { IconContext } from 'react-icons';
-import css from './Searchbar.module.css';
+import css from './SearchBar.module.css';
 
-export default function Searchbar({ onSubmit }) {
+export default function SearchBar({ onSubmit }) {
   const [value, setValue] = useState('');
 
   const handleChange = e => {
@@ -25,7 +25,7 @@ export default function Searchbar({ onSubmit }) {
   };
 
   return (
-    <section className={css.Searchbar}>
+    <section className={css.SearchBar}>
       <form className={css.SearchForm} onSubmit={handleSubmit}>
         <button className={css.SearchFormButton} type="submit">
           <IconContext.Provider value={{ size: '2em' }}>
@@ -46,6 +46,6 @@ export default function Searchbar({ onSubmit }) {
   );
 }
 
-Searchbar.propTypes = {
+SearchBar.propTypes = {
   onSubmit: PropTypes.func.isRequired,
 };

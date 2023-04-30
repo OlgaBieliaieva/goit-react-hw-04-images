@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Searchbar from '../Searchbar/Searchbar';
+import SearchBar from '../SearchBar/Searchbar';
 import ImageGallery from '../ImageGallery/ImageGallery';
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <main>
-      <Searchbar onSubmit={handleFormSubmit} />
+      <SearchBar onSubmit={handleFormSubmit} />
       <ImageGallery query={query} />
     </main>
   );
