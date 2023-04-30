@@ -16,23 +16,3 @@ export default function App() {
     </main>
   );
 }
-
-// class App extends Component {
-//   state = {
-//     query: '',
-//   };
-//   handleFormSubmit = query => {
-//     this.setState({ query });
-//   };
-
-//   render() {
-//     return (
-//       <main>
-//         <Searchbar onSubmit={this.handleFormSubmit} />
-//         <ImageGallery query={this.state.query} />
-//       </main>
-//     );
-//   }
-// }
-
-// export default App;
